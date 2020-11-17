@@ -29,3 +29,11 @@ Mybatis helloworld
      * @return
      * @throws IOException
      */
+
+# mybatis02-config
+    2、mybatis-config.xml中的属性配置
+    <!-- 1、mybatis 可以使用properties来引入外部properties配置文件的内容；
+        resource ：引入类路径下资源
+        url ：引入网络路径或者磁盘路径下的资源
+    -->
+    <properties resource="properties/dbconfig.properties"></properties>
