@@ -31,7 +31,8 @@ Mybatis helloworld
      */
 
 # mybatis02-config
-    2、mybatis-config.xml中的属性配置
+    mybatis-config.xml中的属性配置
+
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE configuration
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
