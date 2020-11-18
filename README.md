@@ -39,7 +39,7 @@ Mybatis helloworld
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <!--
-        1、mybatis 可以使用properties来引入外部properties配置文件的内容；
+        1、mybatis 可以使用properties来引入外部properties配置文件的内容 ；
         resource ：引入类路径下资源
         url ：引入网络路径或者磁盘路径下的资源
     -->
