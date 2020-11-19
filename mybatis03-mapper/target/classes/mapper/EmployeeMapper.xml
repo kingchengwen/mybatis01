@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--指定为接口的全类名-->
+<mapper namespace="com.mi.dao.EmployeeMapper">
+    <!--id 为接口的方法名-->
+    <select id="getEmployeeById" resultType="com.mi.pojo.Employee">
+        select * from employee where id = #{id}
+    </select>
+
+    <insert id="addEmp" parameterType="com.mi.pojo.Employee">
+        insert into employee (name,gender) values (#{name},#{gender})
+    </insert>
+
+    <update id="updateEmp" parameterType="com.mi.pojo.Employee">
+        update employee set name = #{name},gender = #{gender} where id = #{id}
+    </update>
+
+    <delete id="deleteEmp" parameterType="com.mi.pojo.Employee">
+        delete from employee where id = #{id}
+    </delete>
+    <select id="getEmployees" resultType="com.mi.pojo.Employee">
+        select * from employee
+    </select>
+</mapper>
+
